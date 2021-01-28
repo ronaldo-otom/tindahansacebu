@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+header {
+  top: 0;
+  margin-bottom: 1%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+.bodyContent {
+  margin-left: -0.5%;
+}
+.sideNavBorder {
+  border-radius: 0;
+}
+.searchBox {
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchBoxWrapper {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchBoxTitle {
+  font-size: 2vw;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 30px;
+}
+button:hover {
+  background-color: #f5f5f5;
+}
+.sticky {
+  z-index: 100;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  width: 734;
+  transform: translateZ(0);
+}
+
+.products :hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.productsListView {
+  box-shadow: 4px 4px 4px 4px #f5f5f5;
+  margin-left: 22px;
+  margin-right: 22px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 5%;
+}
+.footer {
+  height: 150px;
+  background-color: #000000d3;
+}
+
+.secondFooter {
+  height: 40px;
+}
+
+.linkHeader {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.linkHeader:hover {
+  text-decoration: none;
+  color: white;
+}
+.link {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+.link:hover {
+  text-decoration: none;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wireFrame {
+  border: 1px solid black;
+  height: 225px;
+  width: 225px;
+}
+
+.categoryWireFrame {
+  border: 1px solid transparent;
+  height: 45px;
+  width: 180px;
+}
+
+.wireFrameTransparent {
+  border: 1px solid transparent;
+  height: 35px;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.sideNav {
+  top: 0;
+  bottom: 1;
+  position: sticky;
+}
+
+.productViewDetails {
+  font-size: 13px;
+  height: 60px;
+  width: 100%;
+  overflow-y: 'hidden';
+  text-overflow: ellipsis;
+}
+
+.productViewDetails:hover {
+  overflow-y: scroll;
+}
+
+.storeProfile {
+  width: 100%;
+  height: 100%;
+  padding: 17px;
+}
+
+.storeProfileImage {
+  width: 127px;
+  height: 127px;
+  border: 1px solid #888888;
+  border-radius: 50%;
+}
+
+.thumbnailImages {
+  cursor: pointer;
+  opacity: 50%;
+
+}
+
+.thumbnailImages:hover {
+  cursor: pointer;
+  opacity: 100%;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+
+/* StoreProfile CSS */
+.storeprofileImage {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
 }
